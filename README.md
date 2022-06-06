@@ -62,7 +62,7 @@ After encryption/decryption:
 the outputted text will be converted to a string of hexadecimals then converted back 
 to binary text.
 
-the way I implemented the addtion of bigger data isn't the most ideal way but it gets the job done!
+the way I implemented inputting bigger data isn't the most ideal way but it gets the job done!
 
 ```php
 $strinput="Two One Nine Two";
