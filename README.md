@@ -65,7 +65,7 @@ to binary text.
 the way I implemented the addtion of bigger data isn't the most ideal way but it gets the job done!
 
 ```php
-$strinput="Two One Nine Twoa";
+$strinput="Two One Nine Two";
 $secret_key="SECRET";
 
 $strinput = str_split($strinput,16);                                    //spliting string into 16 bytes (128 bit) per block.
@@ -84,7 +84,7 @@ for($i=0 ; $i<count($strinput) ; $i++)
     $ciphertext= $ciphertext . $cipher;                                //adds each resulting cipher to a string.
 }
 
-echo "<br>-----------------------------------------<br>";
+echo "<br><br>----------------------------------------- Decryption<br>";
 
 $ciphertext = str_split($ciphertext,16);                                //spliting cipher string into 16 bytes (128 bit) per block.
 
