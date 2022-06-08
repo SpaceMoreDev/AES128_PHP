@@ -12,13 +12,15 @@ We first split the key into four blocks then on the fourth block “w[3]” we p
 - Byte Substitution (S-Box)
 - XOR with round constant table = g(w[3]) 
 
+![Image 2](images/RCON_Table.png)
+
 Then we perform an XOR operation to generate 4 new blocks from the resulting g(w[4]) block, to form a new key:
 
-![Image 2](images/RCON_Table.png)
+![Image 2](images/Expansion_Key.png)
 
 by combing all of the blocks from w[4] to w[7]  we form the round key.
 
-![Image 2](images/Expansion_Key.png)
+
 
 
 >**In encryption**: we generate new round keys along side each iteration of the state matrix to XOR them by each generated round key.
