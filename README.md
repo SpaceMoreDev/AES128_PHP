@@ -7,6 +7,7 @@ The used secret key size is 128 bits (16 bytes) which means it takes 10 rounds t
 1-  AES key expansion:
 
 We first split the key into four blocks then on the fourth block “w[3]” we perform:
+
 •	Circular byte left shift
 •	Byte Substitution (S-Box)
 •	XOR with round constant table = g(w[3]) 
